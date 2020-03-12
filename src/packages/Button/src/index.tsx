@@ -2,13 +2,6 @@ import React, { FC, ReactNode } from "react";
 
 type ButtonProps = {
   children: ReactNode;
-
-  /**
-   * Simple click handler
-   * @param {SyntheticEvent} event - React's original SyntheticEvent.
-   * @param {object} data - All props.
-   * @returns {object} nothing.
-   */
   onClick?: () => void;
 };
 
@@ -20,3 +13,5 @@ export const Button: FC<ButtonProps> = ({ children, onClick }: ButtonProps) => (
     {children}
   </button>
 );
+
+export default Button;

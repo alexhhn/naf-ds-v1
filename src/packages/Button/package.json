@@ -1,58 +1,39 @@
 {
   "name": "@alexnaf/button",
   "description": "Button component",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "",
   "main": "dist/index.js",
-  "publishConfig": {
-    "access": "public"
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react": ">= 16.8.0 < 2",
+    "react-dom": ">= 16.8.0 < 2"
   },
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.29",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "rollup": "^2.0.3",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "typescript": "^3.7.5"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^5.3.14",
-    "@storybook/addon-docs": "^5.3.14",
-    "@storybook/addon-links": "^5.3.14",
-    "@storybook/addons": "^5.3.14",
-    "@storybook/preset-create-react-app": "^2.0.0",
-    "@storybook/react": "^5.3.14",
-    "lerna": "^3.20.2"
-  }
+  "files": [
+    "dist"
+  ]
 }
