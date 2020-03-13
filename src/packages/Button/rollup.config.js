@@ -14,5 +14,6 @@ export default {
     }
   ],
   plugins: [typescript({ objectHashIgnoreUnknownHack: true })],
-  external: ["react", "react-dom"]
+  globals: { "styled-components": "styled" },
+  external: ["react", "react-dom", "styled-components"]
 };

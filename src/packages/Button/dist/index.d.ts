@@ -6,5 +6,5 @@ declare type ButtonProps = {
 /**
  * The world's most _basic_ button
  */
-export declare const Button: FC<ButtonProps>;
+declare const Button: FC<ButtonProps>;
 export default Button;

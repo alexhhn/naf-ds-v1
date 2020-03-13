@@ -1,5 +1,5 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { Button } from "./Button";
+import Button from "../packages/Button/src";
 
 <Meta title="Test" />
 
@@ -9,7 +9,7 @@ Here's some _markdown_!
 
 <Preview>
   <Story name="button">
-    <Button>hello</Button>
+    <Button>CTA Knapp</Button>
   </Story>
 </Preview>
 
