@@ -6,30 +6,39 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
-/**
- * The world's most _basic_ button
- */
-const Button: FC<ButtonProps> = ({ children, onClick }: ButtonProps) => (
+export const Button: FC<ButtonProps> = ({ children, onClick }: ButtonProps) => (
   <StyledButton onClick={onClick} type="button">
     {children}
   </StyledButton>
 );
 
-const StyledButton = styled.button`
+export const SecondaryButton: FC<ButtonProps> = ({
+  children,
+  onClick
+}: ButtonProps) => (
+  <StyledButton onClick={onClick} type="button" isSecondary={true}>
+    {children}
+  </StyledButton>
+);
+
+type StyledProps = {
+  isSecondary?: boolean;
+};
+
+const StyledButton = styled.button<StyledProps>`
   font-family: Arial, sans-serif;
-  border: none;
+  border: ${props => (props.isSecondary ? "ffdb00" : "none")};
   padding: 0.5em 1em;
   font-size: 16px;
   font-weight: bold;
   min-width: 100px;
-  background-color: #ffdb00;
+  background-color: ${props => (props.isSecondary ? "transparent" : "#ffdb00")};
   outline: none;
   cursor: pointer;
   border-radius: 4px;
 
   &:hover {
-    background-color: #fff000;
-  }
+    background-color: ${props => (props.isSecondary ? "#f4f4f4" : "#fff000")};
 `;
 
 export default Button;

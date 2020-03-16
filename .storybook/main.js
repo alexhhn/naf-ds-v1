@@ -6,6 +6,9 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/preset-create-react-app",
+    "@storybook/addon-a11y/register",
+    "@storybook/addon-knobs",
+
     {
       name: "@storybook/addon-docs",
       options: {
