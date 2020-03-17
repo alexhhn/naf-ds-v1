@@ -1,7 +1,7 @@
 {
   "name": "@alexnaf/button",
   "description": "Button component",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "author": "Alex H. H. Nguyen",
   "main": "dist/index.js",
