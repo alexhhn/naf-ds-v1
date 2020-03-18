@@ -1,7 +1,7 @@
 {
   "name": "@alexnaf/badge",
   "description": "Badge component",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "license": "",
   "author": "Alex H. H. Nguyen",
   "main": "dist/index.js",
