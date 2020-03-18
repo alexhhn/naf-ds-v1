@@ -2,7 +2,7 @@ import React from "react";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, boolean, color } from "@storybook/addon-knobs";
 
-import Badge from "./";
+import Badge from "./src";
 
 export default {
   title: "Badge",

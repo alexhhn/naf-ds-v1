@@ -25,16 +25,20 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-/**
- * The world's most _basic_ button
- */
 var Button = function (_a) {
     var children = _a.children, onClick = _a.onClick;
-    return (React.createElement(StyledButton, null,
-        React.createElement("button", { onClick: onClick, type: "button" }, children)));
+    return (React.createElement(StyledButton, { onClick: onClick, type: "button" }, children));
 };
-var StyledButton = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  padding: 20px;\n  background-color: turquoise;\n"], ["\n  padding: 20px;\n  background-color: turquoise;\n"])));
+var SecondaryButton = function (_a) {
+    var children = _a.children, onClick = _a.onClick;
+    return (React.createElement(StyledButton, { onClick: onClick, type: "button", isSecondary: true },
+        children,
+        " huh"));
+};
+var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  border: ", ";\n  padding: 0.5em 1em;\n  font-size: 16px;\n  font-weight: bold;\n  min-width: 100px;\n  background-color: ", ";\n  outline: none;\n  cursor: pointer;\n  border-radius: 4px;\n\n  &:hover {\n    background-color: ", ";\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  border: ", ";\n  padding: 0.5em 1em;\n  font-size: 16px;\n  font-weight: bold;\n  min-width: 100px;\n  background-color: ", ";\n  outline: none;\n  cursor: pointer;\n  border-radius: 4px;\n\n  &:hover {\n    background-color: ", ";\n  }\n"])), function (props) { return (props.isSecondary ? "ffdb00" : "none"); }, function (props) { return (props.isSecondary ? "transparent" : "#ffdb00"); }, function (props) { return (props.isSecondary ? "#f4f4f4" : "#fff000"); });
 var templateObject_1;
 
+exports.Button = Button;
+exports.SecondaryButton = SecondaryButton;
 exports.default = Button;
 //# sourceMappingURL=index.js.map

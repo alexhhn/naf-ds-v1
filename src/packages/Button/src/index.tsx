@@ -17,7 +17,7 @@ export const SecondaryButton: FC<ButtonProps> = ({
   onClick
 }: ButtonProps) => (
   <StyledButton onClick={onClick} type="button" isSecondary={true}>
-    {children}
+    {children} huh
   </StyledButton>
 );
 
@@ -39,6 +39,7 @@ const StyledButton = styled.button<StyledProps>`
 
   &:hover {
     background-color: ${props => (props.isSecondary ? "#f4f4f4" : "#fff000")};
+  }
 `;
 
 export default Button;

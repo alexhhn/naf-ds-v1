@@ -1,6 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import Button from "../packages/Button/src";
+import Button from "./src";
 
 export default {
   title: "Button",
